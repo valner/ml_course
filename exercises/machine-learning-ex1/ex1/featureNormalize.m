@@ -28,6 +28,12 @@ sigma = zeros(1, size(X, 2));
 
 
 
+mu = std(X)
+sigma = mean(X)
+
+X_norm = (X_norm .- mu) ./ sigma
+disp(X_norm)
+
 
 
 
